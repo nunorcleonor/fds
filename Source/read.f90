@@ -59,6 +59,7 @@ IF (FN_INPUT(1:1)==' ') THEN
    IF (MYID==0) THEN
       CALL WRITE_SUMMARY_INFO(LU_ERR)
       WRITE(LU_ERR,'(/A)')  ' Consult FDS Users Guide Chapter, Running FDS, for further instructions.'
+      WRITE(LU_ERR,'(/A)')  ' Edited by Nuno'
       WRITE(LU_ERR,'(/A)')  ' Hit Enter to Escape...'
       READ(5,*,ERR=2,END=2)
    ENDIF
